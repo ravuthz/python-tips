@@ -1,6 +1,9 @@
 # Commands to start on workspace startup
 tasks:
   - init: python --version
+    command: pip list
+    openMode: split-left
+  - name: Run script file
     command: python ./run-script.py
     openMode: split-right
 # Ports to expose on workspace startup
