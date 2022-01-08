@@ -18,3 +18,7 @@ print(isinstance(result, int))
 print("Script 2 with multiple line of code")
 '
 echo ""
+
+echo -e 'import os; os.system("pwd")' | python
+python -c 'exec("import os; os.system(\"pwd\")")'
+(echo 'import os; os.system("pwd")') | python
