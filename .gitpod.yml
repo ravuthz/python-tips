@@ -1,0 +1,9 @@
+# Commands to start on workspace startup
+tasks:
+  - init: python --version
+    command: python ./run-script.py
+    openMode: split-right
+# Ports to expose on workspace startup
+ports:
+  - port: 8000
+    onOpen: open-preview
